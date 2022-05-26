@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  height: 60px;
+  width: 100vw;
+  background-color: rgb(41, 148, 255);
+  align-items: center;
+  justify-content: start;
+  &__title {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: rgb(185, 185, 185);
+    }
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 4px;
+  border: 1px solid rgb(120, 120, 120);
+}
+
+.usersTableContainer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  button {
+    font-size: 20px;
+    background-color: rgb(41, 148, 255);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: rgb(185, 185, 185);
+    }
+  }
+}
+
+.usersTable {
+  margin-top: 0.5em;
+  &__title {
+    font-weight: bold;
+    cursor: pointer;
+    &-active {
+      background-color: rgb(157, 157, 157);
+    }
+  }
+}
+
+.userPostsContainer {
+  background-color: rgb(248, 248, 248);
+  border-radius: 5px;
+  padding: 13px;
+  margin-bottom: 1rem;
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    img {
+      width: 3em;
+      margin-right: 0.5em;
+    }
+    h2 {
+      font-size: 32px;
+    }
+  }
+  &__posts {
+    margin-bottom: 1em;
+    h4 {
+      margin-bottom: 2px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: rgb(41, 148, 255);
+  }
+}
+
+.userPost {
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  padding: 6px;
+  margin-bottom: 1rem;
+  width: 90rem;
+}
+
+.paginationContainer {
+  display: flex;
+  width: 10rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  button {
+    font-size: 20px;
+    border: none;
+    background-color: #fff;
+    color: rgb(41, 148, 255);
+    cursor: pointer;
+    &.active {
+      color: rgb(161, 161, 161);
+      cursor: default;
+    }
+  }
+}
