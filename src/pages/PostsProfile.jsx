@@ -13,7 +13,7 @@ function PostsProfile() {
       <h2>All posts by user №{id + 1}</h2>
       <div className="postProfile__postsContainer">
         {posts[id].map((post) => (
-          <UserPost props={post} />
+          <UserPost key={post.id} props={post} />
         ))}
       </div>
     </div>
