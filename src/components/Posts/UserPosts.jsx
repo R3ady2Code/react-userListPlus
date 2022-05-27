@@ -9,7 +9,7 @@ function UserPosts({ ...userPosts }) {
     <div className="userPostsContainer">
       <div className="userPostsContainer__info">
         <img src={UserAvatar} alt="user-avatar" />
-        <h2>User ID №{userPosts[0].userId}</h2>
+        <h2>User ID{userPosts[0].userId}</h2>
       </div>
       <div className="userPostsContainer__posts">
         {[...Array(2)].map((post, i) => (
