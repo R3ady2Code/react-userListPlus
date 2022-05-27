@@ -17,7 +17,7 @@ function Posts() {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 
   return (
-    <>
+    <div className="postsContainer">
       <div className="paginationContainer">
         {pageNumbers.map((numb, i) => (
           <button
@@ -33,7 +33,7 @@ function Posts() {
           <UserPosts key={userPosts[0].userId} {...userPosts} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

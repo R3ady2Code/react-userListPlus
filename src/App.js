@@ -47,15 +47,14 @@ function App() {
     <AppContext.Provider
       value={{ users, setUsers, headerTitle, sortBy, setSortBy, posts, setPosts }}>
       <Header />
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Navigate to="/users" replace />} />
-          <Route path="/users" exact element={isDataLoaded ? <Users /> : <Loader />} />
-          <Route path="/posts" exact element={<Posts />} />
-          <Route path="/faq" exact element={<Faq />} />
-          <Route path="/postsprofile/:id" element={<PostsProfile />} />
-        </Routes>
-      </div>
+
+      <Routes>
+        <Route path="/" element={<Navigate to="/users" replace />} />
+        <Route path="/users" exact element={isDataLoaded ? <Users /> : <Loader />} />
+        <Route path="/posts" exact element={<Posts />} />
+        <Route path="/faq" exact element={<Faq />} />
+        <Route path="/postsprofile/:id" element={<PostsProfile />} />
+      </Routes>
     </AppContext.Provider>
   );
 }
