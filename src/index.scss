@@ -51,13 +51,13 @@ td {
   flex-direction: column;
   margin-bottom: 5rem;
   button {
-    font-size: 20px;
+    font-size: 14px;
+    padding: 6px 12px;
     background-color: rgb(41, 148, 255);
     border: none;
     cursor: pointer;
     border-radius: 2px;
     text-align: center;
-    padding: 3px;
     color: #fff;
     transition: all 0.2s ease-in-out;
     &:hover {
